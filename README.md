@@ -206,7 +206,7 @@ Before running the project locally, make sure you have:
 
 ---
 
-###Future Improvements
+##Future Improvements
 
 📚 Personalized Study Plans
 🎯 Learning Goals & Milestones
