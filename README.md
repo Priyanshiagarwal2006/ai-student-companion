@@ -126,7 +126,7 @@ The application provides a clean and responsive interface with simple navigation
 
 # 🏗 Project Architecture
 
-```text
+
                          User
                            │
                            ▼
