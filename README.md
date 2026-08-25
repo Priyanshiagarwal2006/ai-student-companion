@@ -167,6 +167,8 @@ Vercel — Frontend
 Render — Backend
 Aiven Cloud — Database
 
+---
+
 # 📷 Project Gallery
 
 ### 🏠 Home Dashboard
