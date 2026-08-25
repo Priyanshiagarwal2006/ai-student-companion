@@ -26,7 +26,7 @@ export default function EditProfilePage() {
         }
 
         const response = await fetch(
-          "http://localhost:5000/api/profile",
+          "https://ai-student-companion.onrender.com/api/profile",
           {
             method: "GET",
             headers: {
@@ -82,7 +82,7 @@ export default function EditProfilePage() {
       }
 
       const response = await fetch(
-        "http://localhost:5000/api/profile",
+        "https://ai-student-companion.onrender.com/api/profile",
         {
           method: "PUT",
           headers: {

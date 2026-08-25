@@ -77,7 +77,7 @@ export default function Home() {
         }
 
         const response = await fetch(
-          "http://localhost:5000/api/tasks",
+          "https://ai-student-companion.onrender.com/api/tasks",
           {
             method: "GET",
             headers: {
@@ -121,7 +121,7 @@ export default function Home() {
         }
 
         const response = await fetch(
-          "http://localhost:5000/api/chat",
+          "https://ai-student-companion.onrender.com/api/chat",
           {
             method: "GET",
             headers: {

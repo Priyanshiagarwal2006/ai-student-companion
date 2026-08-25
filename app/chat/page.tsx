@@ -58,7 +58,7 @@ export default function ChatPage() {
         }
 
         const response = await fetch(
-          "http://localhost:5000/api/chat",
+          "https://ai-student-companion.onrender.com/api/chat",
           {
             method: "GET",
             headers: {
@@ -121,7 +121,7 @@ export default function ChatPage() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/chat",
+        "https://ai-student-companion.onrender.com/api/chat",
         {
           method: "POST",
           headers: {
@@ -158,7 +158,7 @@ export default function ChatPage() {
         if (!sessionId) {
           const historyResponse =
             await fetch(
-              "http://localhost:5000/api/chat",
+              "https://ai-student-companion.onrender.com/api/chat",
               {
                 headers: {
                   Authorization: `Bearer ${token}`,
@@ -228,7 +228,7 @@ export default function ChatPage() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/chat/${id}`,
+        `https://ai-student-companion.onrender.com/api/chat/${id}`,
         {
           method: "GET",
           headers: {
@@ -299,7 +299,7 @@ export default function ChatPage() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/chat/${id}`,
+        `https://ai-student-companion.onrender.com/api/chat/${id}`,
         {
           method: "DELETE",
           headers: {

@@ -37,7 +37,7 @@ export default function TasksPage() {
       }
 
       const response = await fetch(
-        "http://localhost:5000/api/tasks",
+        "https://ai-student-companion.onrender.com/api/tasks",
         {
           method: "GET",
           headers: {
@@ -98,7 +98,7 @@ export default function TasksPage() {
       }
 
       const response = await fetch(
-        "http://localhost:5000/api/tasks",
+        "https://ai-student-companion.onrender.com/api/tasks",
         {
           method: "POST",
           headers: {
@@ -151,7 +151,7 @@ export default function TasksPage() {
       }
 
       const response = await fetch(
-        `http://localhost:5000/api/tasks/${id}`,
+        `https://ai-student-companion.onrender.com/api/tasks/${id}`,
         {
           method: "PATCH",
           headers: {
@@ -203,7 +203,7 @@ export default function TasksPage() {
       }
 
       const response = await fetch(
-        `http://localhost:5000/api/tasks/${id}`,
+        `https://ai-student-companion.onrender.com/api/tasks/${id}`,
         {
           method: "DELETE",
           headers: {
@@ -262,7 +262,7 @@ export default function TasksPage() {
       }
 
       const response = await fetch(
-        "http://localhost:5000/api/tasks",
+        "https://ai-student-companion.onrender.com/api/tasks",
         {
           method: "DELETE",
           headers: {

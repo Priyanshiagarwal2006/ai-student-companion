@@ -20,7 +20,7 @@ export default function ForgotPasswordPage() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/auth/forgot-password",
+        "https://ai-student-companion.onrender.com/api/auth/forgot-password",
         {
           method: "POST",
           headers: {

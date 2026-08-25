@@ -42,7 +42,7 @@ export default function ResetPasswordPage() {
       setLoading(true);
 
       const response = await fetch(
-        "http://localhost:5000/api/auth/reset-password",
+        "https://ai-student-companion.onrender.com/api/auth/reset-password",
         {
           method: "POST",
           headers: {
