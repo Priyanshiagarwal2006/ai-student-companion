@@ -44,14 +44,17 @@ A persistent chat system that lets students maintain and continue their learning
 - Continue previous conversations
 - Delete chat sessions
 - Database-backed messages
+  
 
 ### 🧠 Context-Aware Learning
 
 Previous messages are used as conversation context, enabling natural follow-up questions and more relevant AI responses without repeatedly explaining the topic.
 
+
 ### 🌐 Multi-Language Support
 
 The AI assistant supports **English, Hindi, and Hinglish**, responding naturally according to the language used by the student.
+
 
 ### ✅ Task Management
 
@@ -60,6 +63,7 @@ A simple productivity system for organizing and tracking daily student activitie
 - Create and manage tasks
 - Mark tasks as completed
 - Track pending and completed tasks
+  
 
 ### 📊 Productivity Tracking
 
@@ -69,6 +73,7 @@ The dashboard provides a quick overview of student productivity through:
 - Completed Tasks
 - Pending Tasks
 - Productivity Percentage
+  
 
 ### 👤 Secure Authentication
 
@@ -79,14 +84,17 @@ A secure authentication system for managing user accounts and protected applicat
 - Protected Routes
 - Profile Management
 - Password Recovery & Reset
+  
 
 ### 🔐 Protected User Data
 
 Authenticated users can securely access and manage their own profiles, tasks, chat sessions, and messages.
 
+
 ### ⚡ Reliable AI Integration
 
 Gemini API integration includes automatic retry handling with exponential backoff for temporary `429`, `500`, and `503` errors, improving the reliability of AI responses.
+
 
 ### 📱 Responsive User Experience
 
