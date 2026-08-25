@@ -4,7 +4,7 @@
 
 Helping students learn smarter through Artificial Intelligence, personalized learning assistance, task management, productivity tracking, and intelligent conversations.
 
-[Live Website](YOUR_VERCEL_URL) • [Live Demo](YOUR_VERCEL_URL) • [Backend API](https://ai-student-companion.onrender.com) • [Features](#-features) • [Tech Stack](#-tech-stack) • [Project Gallery](#-project-gallery)
+[Live Demo](https://ai-student-companion-olive.vercel.app) • [Backend API](https://ai-student-companion.onrender.com) • [Features](#-features) • [Tech Stack](#-tech-stack) • [Project Gallery](#-project-gallery)
 ---
 
 # 📖 About The Project
