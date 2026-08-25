@@ -4,7 +4,7 @@
 
 Helping students learn smarter through Artificial Intelligence, personalized learning assistance, task management, productivity tracking, and intelligent conversations.
 
-[Live Demo](https://ai-student-companion-olive.vercel.app) • [Backend API](https://ai-student-companion.onrender.com) • [Features](#-features) • [Tech Stack](# 🛠 Tech Stack) • [Project Gallery](# 📷 Project Gallery)
+[Live Demo](https://ai-student-companion-olive.vercel.app) • [Backend API](https://ai-student-companion.onrender.com) • [Features](#-features)
 ---
 
 # 📖 About The Project
@@ -166,127 +166,129 @@ Deployment
 Vercel — Frontend
 Render — Backend
 Aiven Cloud — Database
-📂 Project Structure
-ai-student-companion/
-│
-├── app/
-│   ├── chat/
-│   ├── forgot-password/
-│   ├── home/
-│   ├── login/
-│   ├── profile/
-│   ├── register/
-│   ├── reset-password/
-│   └── tasks/
-│
-├── components/
-│
-├── backend/
-│   ├── config/
-│   ├── middleware/
-│   ├── routes/
-│   └── server.js
-│
-├── public/
-│
-├── package.json
-├── package-lock.json
-├── next.config.ts
-├── tsconfig.json
-└── README.md
-📷 Project Gallery
-🏠 Home Dashboard
 
-🤖 AI Student Companion
+# 📷 Project Gallery
 
-💬 Chat History
+### 🏠 Home Dashboard
 
-✅ Task Management
+![Home Dashboard](./screenshots/home.png)
 
-👤 User Profile
+The Home Dashboard provides a quick overview of the student's tasks, productivity, AI assistance, and recent activities.
 
-🔐 Login & Registration
+---
 
-🔑 Forgot Password
+### 🤖 AI Student Companion
 
-🔒 Reset Password
+![AI Student Companion](./screenshots/ai-chat.png)
 
-🌐 Deployment
-Frontend
+The AI Student Companion allows students to ask questions, understand concepts, solve coding problems, and get personalized academic assistance.
 
-Vercel
+---
 
-Live Website
+### 💬 Chat History
 
-Backend
+![Chat History](./screenshots/chat-history.png)
 
-Render
+Users can access their previous conversations, continue existing discussions, create new chats, and delete chat sessions.
 
-Backend API
+---
 
-Database
+### ✅ Task Management
 
-Aiven Cloud
+![Task Management](./screenshots/tasks.png)
 
-MySQL database hosted on Aiven Cloud for persistent storage of users, tasks, chat sessions, and messages.
+The Task Management section helps students create, manage, complete, and track their daily tasks.
 
-🚀 Getting Started
-Prerequisites
-Node.js
-npm
-MySQL
-Gemini API Key
-Git
-Clone Repository
+---
+
+### 👤 User Profile
+
+![User Profile](./screenshots/profile.png)
+
+The Profile section allows users to view and manage their account information.
+
+---
+
+### 🔐 Login & Registration
+
+![Login & Registration](./screenshots/login.png)
+
+The authentication interface provides secure registration and login functionality using JWT-based authentication.
+
+---
+
+### 🔑 Forgot Password
+
+![Forgot Password](./screenshots/forgot-password.png)
+
+The Forgot Password feature allows users to start the password recovery process.
+
+---
+
+### 🔒 Reset Password
+
+![Reset Password](./screenshots/reset-password.png)
+
+The Reset Password page allows users to securely create a new password for their account.
+
+---
+
+# 🌐 Deployment
+
+### Frontend
+
+**Vercel**
+
+🔗 **Live Website:**  
+YOUR_VERCEL_URL
+
+The Next.js frontend is deployed using Vercel for fast and scalable production hosting.
+
+---
+
+### Backend
+
+**Render**
+
+🔗 **Backend API:**  
+https://ai-student-companion.onrender.com
+
+The Express.js backend is deployed on Render and provides REST APIs for authentication, AI conversations, tasks, profile management, and chat history.
+
+---
+
+### Database
+
+**Aiven Cloud**
+
+The application uses a MySQL database hosted on Aiven Cloud for persistent storage of:
+
+- Users
+- Tasks
+- Chat Sessions
+- Chat Messages
+- User-related application data
+
+---
+
+# 🚀 Getting Started
+
+## Prerequisites
+
+Before running the project locally, make sure you have:
+
+- Node.js
+- npm
+- MySQL
+- Gemini API Key
+- Git
+
+---
+
+## Clone Repository
+
+```bash
 git clone https://github.com/Priyanshiagarwal2006/ai-student-companion-frontend.git
-Install Dependencies
-npm install
-Run Frontend
-npm run dev
-
-The frontend runs on:
-
-http://localhost:3000
-
-For the backend, install dependencies inside the backend directory and configure the required environment variables.
-
-🔐 Environment Variables
-
-Create a .env file for the backend:
-
-MYSQL_HOST=your_mysql_host
-MYSQL_PORT=your_mysql_port
-MYSQL_USER=your_mysql_user
-MYSQL_PASSWORD=your_mysql_password
-MYSQL_DATABASE=your_mysql_database
-
-PORT=5000
-
-JWT_SECRET=your_jwt_secret
-
-GEMINI_API_KEY=your_gemini_api_key
-
-Never commit API keys, passwords, JWT secrets, or .env files to GitHub.
-
-🔮 Future Improvements
-📚 Personalized Study Plans
-🎯 Learning Goals & Milestones
-📈 Advanced Productivity Analytics
-🔔 Study Reminders
-📅 Study Schedule Management
-🧠 Personalized AI Recommendations
-📊 Learning Progress Analytics
-🌙 Dark Mode
-📱 Further Mobile Optimization
-⭐ Thank You for Visiting This Repository!
-
-AI Student Companion combines Artificial Intelligence, learning, and productivity to create a focused digital companion for students.
-
-Building smarter learning experiences, improving productivity, and using AI to make student life simpler.
-
-About
-
-An AI-powered full-stack student learning and productivity platform providing contextual AI conversations, academic assistance, task management, productivity tracking, secure authentication, persistent chat history, and personalized student workflows using modern web technologies.
 
 
 **Bas isko poora ek saath copy-paste karna hai.** Screenshot wale `YOUR_..._SCREENSHOT_URL` baad mein apne GitHub screenshot 
