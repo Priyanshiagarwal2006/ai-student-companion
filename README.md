@@ -206,15 +206,17 @@ Before running the project locally, make sure you have:
 
 ---
 
-## Prerequisites
+## Future Improvements
 
-Before running the project locally, make sure you have:
-
-- Node.js
-- npm
-- MySQL
-- Gemini API Key
-- Git
+📚 Personalized Study Plans
+🎯 Learning Goals & Milestones
+📈 Advanced Productivity Analytics
+🔔 Study Reminders
+📅 Study Schedule Management
+🧠 Personalized AI Recommendations
+📊 Learning Progress Analytics
+🌙 Dark Mode
+📱 Further Mobile Optimization
 ---
 
 ⭐ Thank You for Visiting This Repository!
