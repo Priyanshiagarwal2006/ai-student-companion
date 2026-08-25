@@ -1,7 +1,8 @@
 "use client";
 
 import {
-  ChevronRight,
+  ArrowLeft,
+  CheckCircle2,
   Lock,
   LogOut,
   Mail,
@@ -10,6 +11,7 @@ import {
   Shield,
   Star,
   User,
+  ChevronRight,
 } from "lucide-react";
 
 import Link from "next/link";
@@ -76,10 +78,6 @@ export default function ProfilePage() {
   const [user, setUser] = useState<UserData | null>(null);
   const [loading, setLoading] = useState(true);
 
-  // =========================
-  // LOAD PROFILE
-  // =========================
-
   useEffect(() => {
     const fetchProfile = async () => {
       try {
@@ -113,7 +111,6 @@ export default function ProfilePage() {
 
         setUser(data.user);
 
-        // Keep latest profile data in localStorage
         localStorage.setItem(
           "user",
           JSON.stringify(data.user)
@@ -127,10 +124,6 @@ export default function ProfilePage() {
 
     fetchProfile();
   }, []);
-
-  // =========================
-  // LOGOUT
-  // =========================
 
   const handleLogout = () => {
     localStorage.removeItem("token");
@@ -363,10 +356,10 @@ export default function ProfilePage() {
                       : ""
                   }`}
                 >
-                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-slate-100">
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-[#EDE9FE]">
                     <Icon
                       size={19}
-                      className="text-[#64748B]"
+                      className="text-[#7C3AED]"
                     />
                   </div>
 
