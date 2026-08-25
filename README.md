@@ -124,23 +124,6 @@ The application provides a clean and responsive interface with simple navigation
 
 ---
 
-# 🏗 Project Architecture
-
-
-                         User
-                           │
-                           ▼
-                  Next.js Frontend
-                           │
-                    REST API Requests
-                           │
-                           ▼
-                  Express.js Backend
-                    │            │
-                    ▼            ▼
-               Gemini API      MySQL
-                              Aiven Cloud
-
 🛠 Tech Stack
 Frontend
 Next.js
@@ -187,14 +170,6 @@ The AI Student Companion allows students to ask questions, understand concepts, 
 
 ---
 
-### 💬 Chat History
-
-![Chat History](./screenshots/chat-history.png)
-
-Users can access their previous conversations, continue existing discussions, create new chats, and delete chat sessions.
-
----
-
 ### ✅ Task Management
 
 ![Task Management](./screenshots/tasks.png)
@@ -219,62 +194,6 @@ The authentication interface provides secure registration and login functionalit
 
 ---
 
-### 🔑 Forgot Password
-
-![Forgot Password](./screenshots/forgot-password.png)
-
-The Forgot Password feature allows users to start the password recovery process.
-
----
-
-### 🔒 Reset Password
-
-![Reset Password](./screenshots/reset-password.png)
-
-The Reset Password page allows users to securely create a new password for their account.
-
----
-
-# 🌐 Deployment
-
-### Frontend
-
-**Vercel**
-
-🔗 **Live Website:**  
-YOUR_VERCEL_URL
-
-The Next.js frontend is deployed using Vercel for fast and scalable production hosting.
-
----
-
-### Backend
-
-**Render**
-
-🔗 **Backend API:**  
-https://ai-student-companion.onrender.com
-
-The Express.js backend is deployed on Render and provides REST APIs for authentication, AI conversations, tasks, profile management, and chat history.
-
----
-
-### Database
-
-**Aiven Cloud**
-
-The application uses a MySQL database hosted on Aiven Cloud for persistent storage of:
-
-- Users
-- Tasks
-- Chat Sessions
-- Chat Messages
-- User-related application data
-
----
-
-# 🚀 Getting Started
-
 ## Prerequisites
 
 Before running the project locally, make sure you have:
@@ -287,10 +206,17 @@ Before running the project locally, make sure you have:
 
 ---
 
-## Clone Repository
+🔮 Future Improvements
+📚 Personalized Study Plans
+🎯 Learning Goals & Milestones
+📈 Advanced Productivity Analytics
+🔔 Study Reminders
+📅 Study Schedule Management
+🧠 Personalized AI Recommendations
+📊 Learning Progress Analytics
+🌙 Dark Mode
+📱 Further Mobile Optimization
 
-```bash
-git clone https://github.com/Priyanshiagarwal2006/ai-student-companion-frontend.git
+---
 
-
-**Bas isko poora ek saath copy-paste karna hai.** Screenshot wale `YOUR_..._SCREENSHOT_URL` baad mein apne GitHub screenshot 
+⭐ Thank You for Visiting This Repository!
