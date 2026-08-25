@@ -139,59 +139,100 @@ REST APIs
 JWT Authentication
 Database
 MySQL
-Aiven Cloud
 AI Integration
 Google Gemini API
 Gemini Flash Model
 Context-Aware Conversations
 Retry & Error Handling
 Deployment
-Vercel — Frontend
-Render — Backend
-Aiven Cloud — Database
 
 ---
 
 # 📷 Project Gallery
 
+<table>
+<tr>
+<td align="center">
+
 ### 🏠 Home Dashboard
 
-![Home Dashboard](./screenshots/home.png)
+<img src="./screenshots/home.png" width="400"/>
 
-The Home Dashboard provides a quick overview of the student's tasks, productivity, AI assistance, and recent activities.
+Home dashboard with tasks, productivity, AI assistance, and recent activities.
 
----
+</td>
+
+<td align="center">
 
 ### 🤖 AI Student Companion
 
-![AI Student Companion](./screenshots/ai-chat.png)
+<img src="./screenshots/ai-chat.png" width="400"/>
 
-The AI Student Companion allows students to ask questions, understand concepts, solve coding problems, and get personalized academic assistance.
+AI-powered assistant for learning, coding, and academic assistance.
 
----
+</td>
+</tr>
+
+<tr>
+<td align="center">
 
 ### ✅ Task Management
 
-![Task Management](./screenshots/tasks.png)
+<img src="./screenshots/tasks.png" width="400"/>
 
-The Task Management section helps students create, manage, complete, and track their daily tasks.
+Manage daily tasks and track completed and pending activities.
 
----
+</td>
+
+<td align="center">
 
 ### 👤 User Profile
 
-![User Profile](./screenshots/profile.png)
+<img src="./screenshots/profile.png" width="400"/>
 
-The Profile section allows users to view and manage their account information.
+View and manage user account information.
 
----
+</td>
+</tr>
+
+<tr>
+<td align="center">
 
 ### 🔐 Login & Registration
 
-![Login & Registration](./screenshots/login.png)
+<img src="./screenshots/login.png" width="400"/>
 
-The authentication interface provides secure registration and login functionality using JWT-based authentication.
+Secure user registration and login using JWT authentication.
 
+</td>
+
+<td align="center">
+
+### 🔑 Forgot Password
+
+<img src="./screenshots/forgot-password.png" width="400"/>
+
+Password recovery workflow for account access.
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+### 🔒 Reset Password
+
+<img src="./screenshots/reset-password.png" width="400"/>
+
+Secure password reset interface.
+
+</td>
+
+<td align="center">
+
+</td>
+</tr>
+</table>
 ---
 
 ## Prerequisites
@@ -219,4 +260,8 @@ Before running the project locally, make sure you have:
 - 📱 Further Mobile Optimization
 ---
 
-⭐ Thank You for Visiting This Repository!
+# ⭐ Thank You for Visiting This Repository!
+
+AI Student Companion combines **Artificial Intelligence, learning, and productivity** to create a focused digital companion for students.
+
+*Building smarter learning experiences, improving productivity, and using AI to make student life simpler.*
