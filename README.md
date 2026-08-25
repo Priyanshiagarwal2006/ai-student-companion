@@ -124,27 +124,28 @@ The application provides a clean and responsive interface with simple navigation
 
 ---
 
-🛠 Tech Stack
-Frontend
-Next.js
-React
-TypeScript
-Tailwind CSS
-Lucide React
-Next.js App Router
-Backend
-Node.js
-Express.js
-REST APIs
-JWT Authentication
-Database
-MySQL
-AI Integration
-Google Gemini API
-Gemini Flash Model
-Context-Aware Conversations
-Retry & Error Handling
-Deployment
+# 🏗 Project Architecture
+
+```text
+                         👤 User
+                           │
+                           ▼
+                 🎨 Next.js Frontend
+                           │
+                     REST API Requests
+                           │
+                           ▼
+                 ⚙️ Express.js Backend
+                    │       │       │
+          ┌─────────┘       │       └─────────┐
+          ▼                 ▼                 ▼
+   🔐 Authentication    🤖 Gemini AI      ✅ Task APIs
+       JWT                 │
+          │                │
+          └────────┬───────┘
+                   ▼
+              🗄️ MySQL
+
 
 ---
 
