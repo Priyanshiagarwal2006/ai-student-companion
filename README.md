@@ -156,7 +156,7 @@ Deployment
 
 ### 🏠 Home Dashboard
 
-<img src="./screenshots/home.png" width="400"/>
+<img src="https://github.com/Priyanshiagarwal2006/ai-student-companion/blob/main/home.jpeg" width="400"/>
 
 Home dashboard with tasks, productivity, AI assistance, and recent activities.
 
@@ -166,7 +166,7 @@ Home dashboard with tasks, productivity, AI assistance, and recent activities.
 
 ### 🤖 AI Student Companion
 
-<img src="./screenshots/ai-chat.png" width="400"/>
+<img src="https://github.com/Priyanshiagarwal2006/ai-student-companion/blob/main/ai.jpeg" width="400"/>
 
 AI-powered assistant for learning, coding, and academic assistance.
 
@@ -178,7 +178,7 @@ AI-powered assistant for learning, coding, and academic assistance.
 
 ### ✅ Task Management
 
-<img src="./screenshots/tasks.png" width="400"/>
+<img src="https://github.com/Priyanshiagarwal2006/ai-student-companion/blob/main/task.jpeg" width="400"/>
 
 Manage daily tasks and track completed and pending activities.
 
@@ -188,7 +188,7 @@ Manage daily tasks and track completed and pending activities.
 
 ### 👤 User Profile
 
-<img src="./screenshots/profile.png" width="400"/>
+<img src="https://github.com/Priyanshiagarwal2006/ai-student-companion/blob/main/profile.jpeg" width="400"/>
 
 View and manage user account information.
 
@@ -198,37 +198,21 @@ View and manage user account information.
 <tr>
 <td align="center">
 
-### 🔐 Login & Registration
+### 🔐 Login
 
-<img src="./screenshots/login.png" width="400"/>
+<img src="https://github.com/Priyanshiagarwal2006/ai-student-companion/blob/main/login.jpeg" width="400"/>
 
-Secure user registration and login using JWT authentication.
-
-</td>
-
-<td align="center">
-
-### 🔑 Forgot Password
-
-<img src="./screenshots/forgot-password.png" width="400"/>
-
-Password recovery workflow for account access.
-
-</td>
-</tr>
-
-<tr>
-<td align="center">
-
-### 🔒 Reset Password
-
-<img src="./screenshots/reset-password.png" width="400"/>
-
-Secure password reset interface.
+Secure user login using JWT authentication.
 
 </td>
 
 <td align="center">
+
+### 📝 Registration
+
+<img src="https://github.com/Priyanshiagarwal2006/ai-student-companion/blob/main/register.jpeg" width="400"/>
+
+Create a new account with secure user registration.
 
 </td>
 </tr>
