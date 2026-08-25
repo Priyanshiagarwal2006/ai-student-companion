@@ -23,7 +23,9 @@ Built with modern full-stack technologies and integrated with Google Gemini, AI 
 
 ### 🤖 AI Student Companion
 
-Interact with an AI-powered assistant designed specifically for students.
+AI Student Companion provides an intelligent learning assistant designed specifically around student needs. It helps users understand concepts, solve problems, prepare for exams and interviews, and get guidance across a wide range of technical and academic subjects.
+
+It can assist with:
 
 - Programming & Coding
 - Data Structures & Algorithms
@@ -38,70 +40,57 @@ Interact with an AI-powered assistant designed specifically for students.
 
 ### 💬 AI Chat & History
 
-- Context-aware AI conversations
-- Multiple chat sessions
-- Persistent chat history
-- Continue previous conversations
-- Delete chat sessions
-- Database-backed message storage
+The platform provides a complete conversational experience where students can interact with the AI and maintain their learning discussions over time. Conversations are stored securely, allowing users to return to previous discussions whenever needed.
+
+Users can create new chats, continue existing conversations, view chat history, and delete unwanted chat sessions.
 
 ### 🧠 Context-Aware Learning
 
-Previous messages from the current conversation are used as context, allowing students to ask follow-up questions naturally without repeating the entire discussion.
+The AI uses previous messages from the current conversation as context while generating responses. This allows students to ask follow-up questions naturally and continue a discussion without repeatedly explaining the same topic.
+
+This makes the interaction feel more like a continuous learning conversation rather than separate questions and answers.
 
 ### 🌐 Multi-Language Support
 
-The AI assistant supports:
+The AI companion supports **English, Hindi, and Hinglish**, making the platform more accessible and comfortable for different students.
 
-- English
-- Hindi
-- Hinglish
-
-The assistant responds according to the language used by the student.
+The assistant follows the language used by the student so that explanations remain natural and easy to understand.
 
 ### ✅ Task Management
 
-- Create tasks
-- View tasks
-- Complete tasks
-- Track pending tasks
-- Track completed tasks
+The built-in task management system helps students organize their daily activities and keep track of their work from within the same platform.
+
+Students can create tasks, view their tasks, mark completed activities, and keep track of pending work.
 
 ### 📊 Productivity Tracking
 
-The dashboard provides an overview of:
+The dashboard provides a simple overview of the student's productivity by displaying total, completed, and pending tasks along with an overall productivity percentage.
 
-- Total Tasks
-- Completed Tasks
-- Pending Tasks
-- Productivity Percentage
+This gives students a quick understanding of their progress and helps them stay organized.
 
 ### 👤 Secure Authentication
 
-- User Registration
-- Secure Login
-- JWT Authentication
-- Protected Routes
-- Profile Management
-- Forgot Password
-- Reset Password
+The application includes a complete authentication system to securely manage user accounts and protect personalized data.
+
+It supports user registration, login, JWT-based authentication, protected routes, profile management, and password recovery and reset functionality.
 
 ### 🔐 Protected User Data
 
-Authenticated users can securely access their own:
+User-specific information is protected through authentication and backend authorization.
 
-- Profile
-- Tasks
-- Chat Sessions
-- Chat Messages
+Authenticated users can securely access their own profile, tasks, chat sessions, and chat messages, ensuring that personal application data remains associated with the correct account.
 
 ### ⚡ Reliable AI Integration
 
-Gemini API requests include automatic retry handling for temporary `429`, `500`, and `503` errors using exponential backoff.
+The application integrates Google Gemini for AI-powered conversations and includes retry handling for temporary API failures.
+
+When temporary `429`, `500`, or `503` errors occur, the backend uses exponential backoff to retry requests, improving the reliability and stability of the AI experience.
 
 ### 📱 Responsive User Experience
 
-The application provides a clean and responsive interface with simple navigation, reusable components, and student-friendly layouts.
+The platform is designed with a clean and responsive interface that works across different screen sizes.
+
+Reusable components, simple navigation, consistent layouts, and a student-focused design provide a smooth and intuitive experience throughout the application.
 
 ---
 
