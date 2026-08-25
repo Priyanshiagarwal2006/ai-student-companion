@@ -55,6 +55,8 @@ IMPORTANT RULES:
 
 6. Keep answers clear, natural and easy to understand.
 
+   Explain difficult concepts step-by-step when needed.
+
 7. FORMATTING RULE:
 
    Always use clean Markdown formatting.
@@ -99,6 +101,66 @@ IMPORTANT RULES:
 13. Be friendly, supportive and concise while still giving enough
     explanation to properly answer the user's question.
 `;
+
+// ============================================================
+// GEMINI RETRY HELPER
+// ============================================================
+
+async function generateAIResponse(prompt) {
+  const maxRetries = 3;
+
+  for (let attempt = 0; attempt <= maxRetries; attempt++) {
+    try {
+      const response = await ai.models.generateContent({
+        model: "gemini-3.6-flash",
+        contents: prompt,
+      });
+
+      return response;
+    } catch (error) {
+      const status =
+        error?.status ||
+        error?.code ||
+        error?.error?.code;
+
+      const isTemporaryError =
+        status === 429 ||
+        status === 500 ||
+        status === 503;
+
+      // If this is not a temporary error,
+      // don't retry unnecessarily.
+      if (!isTemporaryError) {
+        throw error;
+      }
+
+      // All retries exhausted
+      if (attempt === maxRetries) {
+        console.error(
+          `Gemini failed after ${maxRetries + 1} attempts ❌`
+        );
+
+        throw error;
+      }
+
+      // Exponential backoff:
+      // 1.5s → 3s → 6s
+      const delay = 1500 * Math.pow(2, attempt);
+
+      console.log(
+        `Gemini temporary error (${status}). ` +
+        `Retry ${attempt + 1}/${maxRetries} ` +
+        `after ${delay}ms...`
+      );
+
+      await new Promise((resolve) =>
+        setTimeout(resolve, delay)
+      );
+    }
+  }
+
+  throw new Error("Failed to generate AI response");
+}
 
 // ============================================================
 // POST /api/chat
@@ -213,10 +275,7 @@ conversation as context when necessary.
     // GENERATE AI RESPONSE
     // =========================
 
-    const response = await ai.models.generateContent({
-      model: "gemini-3.6-flash",
-      contents: prompt,
-    });
+    const response = await generateAIResponse(prompt);
 
     const reply =
       response.text ||
@@ -245,15 +304,39 @@ conversation as context when necessary.
       sessionId: currentSessionId,
     });
   } catch (error) {
-    console.error("Gemini API error ❌");
+    console.error("AI chat error ❌");
     console.error(error);
+
+    const status =
+      error?.status ||
+      error?.code ||
+      error?.error?.code;
+
+    // =========================
+    // TEMPORARY GEMINI ERROR
+    // =========================
+
+    if (
+      status === 429 ||
+      status === 500 ||
+      status === 503
+    ) {
+      return res.status(503).json({
+        message:
+          "AI service is temporarily busy. Please try again in a few seconds.",
+      });
+    }
+
+    // =========================
+    // GENERAL ERROR
+    // =========================
 
     res.status(500).json({
       message: "Failed to generate AI response",
       error:
         error instanceof Error
           ? error.message
-          : "Unknown Gemini API error",
+          : "Unknown AI error",
     });
   }
 });
@@ -284,7 +367,10 @@ router.get("/", protect, async (req, res) => {
       chats: sessions,
     });
   } catch (error) {
-    console.error("Get chat history error ❌", error.message);
+    console.error(
+      "Get chat history error ❌",
+      error.message
+    );
 
     res.status(500).json({
       message: "Failed to load chat history",
@@ -350,7 +436,10 @@ router.get("/:sessionId", protect, async (req, res) => {
       messages,
     });
   } catch (error) {
-    console.error("Get chat messages error ❌", error.message);
+    console.error(
+      "Get chat messages error ❌",
+      error.message
+    );
 
     res.status(500).json({
       message: "Failed to load chat messages",
@@ -409,7 +498,10 @@ router.delete("/:sessionId", protect, async (req, res) => {
       message: "Chat deleted successfully",
     });
   } catch (error) {
-    console.error("Delete chat error ❌", error.message);
+    console.error(
+      "Delete chat error ❌",
+      error.message
+    );
 
     res.status(500).json({
       message: "Failed to delete chat",
