@@ -1,11 +1,10 @@
-# AI Student Companion
+# 🎓 AI Student Companion
 
-### AI-Powered Learning & Productivity Assistant
+### 🤖 AI-Powered Learning & Productivity Assistant
 
 Helping students learn smarter through Artificial Intelligence, personalized learning assistance, task management, productivity tracking, and intelligent conversations.
 
 [Live Website](YOUR_VERCEL_URL) • [Live Demo](YOUR_VERCEL_URL) • [Backend API](https://ai-student-companion.onrender.com) • [Features](#-features) • [Tech Stack](#-tech-stack) • [Project Gallery](#-project-gallery)
-
 ---
 
 # 📖 About The Project
