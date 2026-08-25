@@ -9,13 +9,13 @@ Helping students learn smarter through Artificial Intelligence, personalized lea
 
 # 📖 About The Project
 
-AI Student Companion is a modern AI-powered full-stack platform designed to help students with learning, coding, academic questions, productivity, and daily task management.
+AI Student Companion is a modern AI-powered full-stack platform built to support students throughout their learning and productivity journey. It provides an intelligent environment where students can ask questions, understand complex concepts, solve coding and DSA problems, prepare for interviews and exams, and receive personalized academic assistance.
 
-The platform combines an intelligent AI Student Companion with task management, productivity tracking, secure authentication, and persistent chat history to provide students with a centralized digital environment for their academic and daily activities.
+The platform brings AI-powered learning assistance together with task management, productivity tracking, secure authentication, and persistent chat history, creating a centralized workspace for both academic and everyday student activities.
 
-Users can interact with the AI assistant to understand difficult concepts, solve programming and DSA problems, learn technical subjects, prepare for interviews and exams, and get assistance with academic questions.
+With context-aware AI conversations, students can continue discussions naturally and access their previous conversations whenever needed. The application also enables users to organize daily tasks, monitor their productivity, and manage their profiles through a clean, responsive, and user-friendly interface.
 
-The platform also allows students to manage daily tasks, track productivity, continue previous AI conversations, and manage their profile through a simple and responsive interface.
+Built with modern full-stack technologies and integrated with Google Gemini, AI Student Companion focuses on delivering a practical, reliable, and personalized digital learning experience for students.
 
 ---
 
@@ -219,6 +219,7 @@ Create a new account with secure user registration.
 </td>
 </tr>
 </table>
+
 ---
 
 ## Prerequisites
