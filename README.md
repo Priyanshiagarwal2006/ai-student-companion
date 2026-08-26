@@ -3,6 +3,7 @@
 ### 🤖 AI-Powered Learning & Productivity Assistant
 
 Helping students learn smarter through Artificial Intelligence, personalized learning assistance, task management, productivity tracking, and intelligent conversations.
+> **⚠️ Deployment Note:** The application uses **Aiven Cloud MySQL (Free Tier)** for persistent data storage. If the database is temporarily powered off due to inactivity, database-dependent features may be unavailable until the service is active again.
 
 [Live Demo](https://ai-student-companion-olive.vercel.app) • [Backend API](https://ai-student-companion.onrender.com) • [Features](#-features)
 ---
